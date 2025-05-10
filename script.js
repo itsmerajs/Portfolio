@@ -115,3 +115,11 @@ readMoreBtn.addEventListener('click', function (e) {
   readMoreBtn.style.display = 'none'; // Hide the "Read More" button
 });
 
+
+
+document.getElementById("read-more-btn").addEventListener("click", function(e) {
+    e.preventDefault();
+    const section = document.getElementById("timeline");
+    section.classList.remove("hidden");
+    section.scrollIntoView({ behavior: "smooth" });
+});
