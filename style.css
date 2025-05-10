@@ -525,3 +525,11 @@ span {
     word-break: break-word; /* Break words that are too long for the container */
     overflow-wrap: break-word; /* Handle overflow issues */
 }
+
+.home {
+  min-height: 100vh; /* Ensure it fits the screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
