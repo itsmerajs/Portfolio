@@ -48,7 +48,7 @@ section {
 }
 
 .header.sticky {
-    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -62,7 +62,7 @@ section {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .navbar a:hover,
@@ -77,9 +77,11 @@ section {
 }
 
 .home {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .home-img img {
@@ -104,10 +106,6 @@ section {
     font-weight: 700;
 }
 
-.home-content h3:nth-of-type(2) {
-    margin-bottom: 2rem;
-}
-
 .home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
@@ -125,12 +123,12 @@ span {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: .2rem solid var(--main-color);
+    border: 0.2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
 .social-media a:hover {
@@ -147,9 +145,9 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--second-bg-color);
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-weight: 600;
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
 .btn:hover {
@@ -205,8 +203,8 @@ span {
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
+    border: 0.2rem solid var(--bg-color);
+    transition: 0.5s ease;
 }
 
 .services-box:hover {
@@ -253,7 +251,7 @@ span {
 
 .portfolio-box img {
     width: 100%;
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
 .portfolio-box:hover img {
@@ -266,7 +264,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,7 +272,7 @@ span {
     text-align: center;
     padding: 0 4rem;
     transform: translateY(100%);
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -287,7 +285,7 @@ span {
 
 .portfolio-layer p {
     font-size: 1.6rem;
-    margin: .3rem 0 1rem;
+    margin: 0.3rem 0 1rem;
 }
 
 .portfolio-layer a {
@@ -328,8 +326,8 @@ span {
     font-size: 1.6rem;
     color: var(--text-color);
     background: var(--second-bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
 }
 
 .contact .input-box input {
@@ -362,10 +360,10 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: .8rem;
+    padding: 0.8rem;
     background: var(--main-color);
-    border-radius: .8rem;
-    transition: .5s ease;
+    border-radius: 0.8rem;
+    transition: 0.5s ease;
 }
 
 .footer-iconTop a:hover {
@@ -437,101 +435,39 @@ span {
     color: var(--base-color);
     font-weight: bold;
 }
-/* Set the text color to white for the entire table */
+
 .timeline-table td {
-    color: white; /* Ensure all table cell text is white */
+    color: white;
 }
 
-/* Ensure table header row has white text and background */
 .timeline-table .header-row td {
-    color: white; /* White color for header text */
-    background-color: #323946; /* Dark background for header */
+    background-color: #323946;
 }
 
-/* Table rows: Ensure text is white and maintain padding */
 .timeline-table .timeline-row td {
-    color: white; /* White text for rows */
-    padding: 1.5rem; /* Adjust padding for consistency */
-    background-color: transparent; /* Keep transparent background */
+    background-color: transparent;
 }
 
-/* Optional hover effect for rows */
 .timeline-table .timeline-row:hover td {
-    background-color: #3a4452; /* Subtle darken on hover */
-    color: white; /* Ensure text stays white */
+    background-color: #3a4452;
 }
 
-/* Description section within each row: */
 .timeline-table .description {
-    color: white; /* Make description text white */
-    font-size: 1.4rem; /* Adjust size for readability */
+    color: white;
+    font-size: 1.4rem;
 }
-/* Set the table width to a fixed value or percentage, ensure it does not stretch too much */
-.timeline-table {
-    width: 100%; /* Take up the full width available */
-    max-width: 1200px; /* Set a maximum width for the table */
-    margin: 0 auto; /* Center the table horizontally */
-    border-collapse: collapse; /* Collapsing borders to remove extra spacing between cells */
-    text-align: center; /* Align all text in the center */
-    font-size: 1.6rem; /* Adjust text size */
-}
-
-/* Limit the width of individual table cells and prevent overflow */
-.timeline-table td {
-    padding: 1.5rem; /* Reduce padding to prevent cells from becoming too large */
-    text-align: center; /* Center the text inside each cell */
-    vertical-align: middle; /* Ensure the content is vertically centered */
-    overflow: hidden; /* Prevent overflow */
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
-    text-overflow: ellipsis; /* Display ellipsis if text overflows */
-}
-
-/* Header row styling to match content and ensure proper width */
-.timeline-table .header-row td {
-    padding: 1.8rem; /* Slightly larger padding for headers */
-    font-weight: bold; /* Make the header text bold */
-    background-color: #323946; /* Dark background for the header */
-}
-
-/* Row styling: Maintain text color and prevent stretching */
-.timeline-table .timeline-row td {
-    padding: 1.5rem; /* Consistent padding for regular rows */
-    color: white; /* White text for rows */
-    background-color: transparent; /* Keep background transparent */
-}
-
-/* Hover effect: Slight darken for rows */
-.timeline-table .timeline-row:hover td {
-    background-color: #3a4452; /* Darken on hover */
-}
-
-/* Description field inside the table: Adjust font size */
-.timeline-table .description {
-    color: white; /* White text */
-    font-size: 1.4rem; /* Slightly smaller font for descriptions */
-    text-align: left; /* Align text to the left */
-}
-
 
 .timeline-table .header-row td {
     color: #00bcd4 !important;
 }
+
 .hidden {
     display: none;
 }
+
 .description {
-    white-space: normal; /* Allow the text to wrap */
-    word-wrap: break-word; /* Break long words to fit */
-    word-break: break-word; /* Break words that are too long for the container */
-    overflow-wrap: break-word; /* Handle overflow issues */
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
-
-.home {
-  min-height: 100vh; /* Ensure it fits the screen height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-
