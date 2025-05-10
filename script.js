@@ -123,3 +123,33 @@ document.getElementById("read-more-btn").addEventListener("click", function(e) {
     section.classList.remove("hidden");
     section.scrollIntoView({ behavior: "smooth" });
 });
+
+
+    const form = document.getElementById('contact-form');
+    const msg = document.getElementById('msg');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault(); // prevent default form submission
+
+        const formData = new FormData(form);
+
+        fetch("https://formsubmit.co/ajax/rajsomepa@gmail.com", {
+            method: "POST",
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                msg.innerText = "Message sent successfully!";
+                msg.style.color = "green";
+                form.reset();
+            } else {
+                msg.innerText = "Failed to send message.";
+                msg.style.color = "red";
+            }
+        }).catch(error => {
+            msg.innerText = "Error occurred. Please try again.";
+            msg.style.color = "red";
+        });
+    });

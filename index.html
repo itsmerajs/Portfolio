@@ -256,8 +256,8 @@
         </section>
         <section class="portfolio"id="portfolio">
             <h2 class="heading">Latest<span>Project</span></h2>
-            <div class="portfolio-container">
-                <div class="portfolio-box">
+            <!-- <div class="portfolio-container"> -->
+                <!-- <div class="portfolio-box">
                     <img src="myproject/image/jan-vlacuha-Rns_A8bJ_dQ-unsplash.jpg"alt="">
                     <div class="portfolio-layer">
                         <h4>Perssonal Portfolio</h4>
@@ -288,10 +288,12 @@
                         <p>In this project we can book a cab by using java.</p>
                         <a href="#"><i class='bx bx-link-external' ></i></a>
                     </div>
-                </div>
-            </div>
+                </div> -->
+                
+            <!-- </div> -->
+            <h3>I will Update Soon...</h3>
         </section>
-        <section class="contact"id="contact">
+        <!-- <section class="contact"id="contact">
             <h2 class="heading">Contact<span>ME!</span></h2>
 
             <form action="#" name="submit-to-google-sheet">
@@ -307,8 +309,32 @@
                 <input type="submit" value="Send Message"class="btn">
             </form>
             <span id="msg"></span>
-        </section>
+        </section>-->
+        <section class="contact"id="contact">
+          
+<h2 class="heading">Contact<span>ME!</span></h2>
 
+<form id="contact-form">
+    <!-- FormSubmit endpoint -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <!-- You can optionally set _next if you want to redirect after success -->
+
+    <div class="input-box">
+        <input type="text" name="Name" placeholder="Full Name" required>
+        <input type="email" name="Email" placeholder="Email Address" required>
+    </div>
+    <div class="input-box">
+        <input type="number" name="Mobile" placeholder="Mobile Number">
+        <input type="text" name="Subject" placeholder="Email Subject">
+    </div>
+    <textarea name="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+</form>
+
+<span id="msg" style="color: green; margin-top: 10px; display: block;"></span>
+
+        </section>
         <footer class="footer">
             <div class="footer-text">
                 <p>Copyright &copy; 2025 by Raj | All Rights Reserved.</p>
