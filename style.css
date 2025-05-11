@@ -544,3 +544,111 @@ span {
   font-weight: bold;
 }
 
+
+
+#education {
+  padding: 4rem 1rem;
+}
+
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.education-card {
+  background-color: #112240;
+  border-left: 4px solid #64ffda;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+}
+
+.education-card h3 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.edu-date {
+  color: #64ffda;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.edu-sub {
+  color: #a8b2d1;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+/* General section styling (like Tech Stack) */
+.section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #ccd6f6;
+  margin-bottom: 10px;
+}
+
+.section-line {
+  height: 2px;
+  width: 60px;
+  background-color: #64ffda;
+  margin: 0 auto;
+}
+
+/* Education cards layout */
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.education-card {
+  background-color: #112240;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #233554;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+}
+
+.edu-degree {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.edu-details {
+  font-size: 0.95rem;
+  color: #a8b2d1;
+}
+
+#contact {
+  margin-top: 0;
+  padding-top: 20px; /* You can adjust this to 0 if needed */
+}
+
+#education {
+  padding-bottom: 20px; /* Or 0 if necessary */
+  margin-bottom: -460px;
+}
